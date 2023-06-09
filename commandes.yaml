@@ -1,0 +1,19 @@
+minikube start --vm-driver=hyperv
+minikube status
+kubectl get pod/node
+kubectl get services
+kubectl describe pod [pod name]
+kubectl get replicaset
+kubectl create deployment [deployment name] --image=mongo
+kubectl apply -f ngixn-deploy.yaml
+kubectl delete -f [file name]
+kubectl get deployment
+kubectl logs [pod name]
+kubectl exec -it [pod name] --bin/bash
+kubectl get pod -o wide
+kubectl get deployment nginx-deployment -o yaml > nginx-deployment-file.yaml
+echo -n 'value to convert' | base64
+!Secret must be created before the deployment
+kubectl get pod --watch
+kubectl get all | grep mongodb
+minikube service mongo-express-service // to get access an external service from minikube
